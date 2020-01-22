@@ -1,0 +1,53 @@
+﻿@model ProductListModel
+
+<div class="row" style="padding-top:20px;">
+    <div class="col-md-3">
+        <h3 class="cate">CATEGORIES</h3>
+        @await Component.InvokeAsync("CategoryList")
+    </div>
+    <div class="col-md-9">
+        <div class="top-header" style="background-color:navajowhite">
+            <div class="container">
+                <div class="top-header-left">
+                    <div class="dropdown">
+                        <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Sıralama
+                        </a>
+
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" asp-controller="Shop" asp-action="List" asp-route-sortOrder="@ViewData["NameSortParm"]" asp-route-page="@(Model.PageInfo.CurrentPage)">Adına göre sırala</a>
+                            <a class="dropdown-item" asp-controller="Shop" asp-action="List" asp-route-sortOrder="@ViewData["PriceSortAsc"]" asp-route-page="@(Model.PageInfo.CurrentPage)">Fiyata Göre Artan</a>
+                            <a class="dropdown-item" asp-controller="Shop" asp-action="List" asp-route-sortOrder="@ViewData["PriceSortDesc"]" asp-route-page="@(Model.PageInfo.CurrentPage)">Fiyata Göre Azalan</a>
+                        </div>
+                    </div>
+                    <!---->
+                    <div class="clearfix"> </div>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+        <div class="row">
+            @foreach (var product in Model.Products)
+            {
+                <partial name="_product" for="@product" />
+            }
+        </div>
+
+        <a asp-controller="Shop" asp-action="List"
+           asp-route-sortOrder="@ViewData["CurrentSort"]"
+           asp-route-page="@(Model.PageInfo.CurrentPage - 1)"
+           class="btn btn-default">
+            <i class="fas fa-backward"></i>
+            Previous
+        </a>
+        <a asp-controller="Shop" asp-action="List"
+           asp-route-sortOrder="@ViewData["CurrentSort"]"
+           asp-route-page="@(Model.PageInfo.CurrentPage + 1)"
+           class="btn btn-default">
+            Next
+            <i class="fas fa-forward"></i>
+        </a>
+        <div page-model="@Model.PageInfo"></div>
+    </div>
+</div>
+

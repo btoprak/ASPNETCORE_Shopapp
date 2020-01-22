@@ -1,0 +1,14 @@
+C:\Users\Toprak\source\repos\ShopApp3\ShopApp3.DataAccess\bin\Debug\netcoreapp2.1\ShopApp3.Entities.dll
+C:\Users\Toprak\source\repos\ShopApp3\ShopApp3.DataAccess\obj\Debug\netcoreapp2.1\ShopApp3.DataAccess.csprojAssemblyReference.cache
+C:\Users\Toprak\source\repos\ShopApp3\ShopApp3.DataAccess\obj\Debug\netcoreapp2.1\ShopApp3.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\Toprak\source\repos\ShopApp3\ShopApp3.DataAccess\obj\Debug\netcoreapp2.1\ShopApp3.DataAccess.AssemblyInfoInputs.cache
+C:\Users\Toprak\source\repos\ShopApp3\ShopApp3.DataAccess\obj\Debug\netcoreapp2.1\ShopApp3.DataAccess.AssemblyInfo.cs
+C:\Users\Toprak\source\repos\ShopApp3\ShopApp3.DataAccess\bin\Debug\netcoreapp2.1\ShopApp3.DataAccess.deps.json
+C:\Users\Toprak\source\repos\ShopApp3\ShopApp3.DataAccess\bin\Debug\netcoreapp2.1\ShopApp3.DataAccess.dll
+C:\Users\Toprak\source\repos\ShopApp3\ShopApp3.DataAccess\bin\Debug\netcoreapp2.1\ShopApp3.DataAccess.pdb
+C:\Users\Toprak\source\repos\ShopApp3\ShopApp3.DataAccess\bin\Debug\netcoreapp2.1\ShopApp3.Entities.pdb
+C:\Users\Toprak\source\repos\ShopApp3\ShopApp3.DataAccess\obj\Debug\netcoreapp2.1\ShopApp3.DataAccess.csproj.CopyComplete
+C:\Users\Toprak\source\repos\ShopApp3\ShopApp3.DataAccess\obj\Debug\netcoreapp2.1\ShopApp3.DataAccess.dll
+C:\Users\Toprak\source\repos\ShopApp3\ShopApp3.DataAccess\obj\Debug\netcoreapp2.1\ShopApp3.DataAccess.pdb
+C:\Users\Toprak\source\repos\ShopApp3\ShopApp3.DataAccess\bin\Debug\netcoreapp2.1\ShopApp3.DataAccess.runtimeconfig.json
+C:\Users\Toprak\source\repos\ShopApp3\ShopApp3.DataAccess\bin\Debug\netcoreapp2.1\ShopApp3.DataAccess.runtimeconfig.dev.json

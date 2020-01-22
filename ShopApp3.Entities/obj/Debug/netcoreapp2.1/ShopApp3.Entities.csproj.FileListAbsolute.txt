@@ -1,0 +1,9 @@
+C:\Users\Toprak\source\repos\ShopApp3\ShopApp3.Entities\bin\Debug\netcoreapp2.1\ShopApp3.Entities.deps.json
+C:\Users\Toprak\source\repos\ShopApp3\ShopApp3.Entities\bin\Debug\netcoreapp2.1\ShopApp3.Entities.dll
+C:\Users\Toprak\source\repos\ShopApp3\ShopApp3.Entities\bin\Debug\netcoreapp2.1\ShopApp3.Entities.pdb
+C:\Users\Toprak\source\repos\ShopApp3\ShopApp3.Entities\obj\Debug\netcoreapp2.1\ShopApp3.Entities.csprojAssemblyReference.cache
+C:\Users\Toprak\source\repos\ShopApp3\ShopApp3.Entities\obj\Debug\netcoreapp2.1\ShopApp3.Entities.csproj.CoreCompileInputs.cache
+C:\Users\Toprak\source\repos\ShopApp3\ShopApp3.Entities\obj\Debug\netcoreapp2.1\ShopApp3.Entities.AssemblyInfoInputs.cache
+C:\Users\Toprak\source\repos\ShopApp3\ShopApp3.Entities\obj\Debug\netcoreapp2.1\ShopApp3.Entities.AssemblyInfo.cs
+C:\Users\Toprak\source\repos\ShopApp3\ShopApp3.Entities\obj\Debug\netcoreapp2.1\ShopApp3.Entities.dll
+C:\Users\Toprak\source\repos\ShopApp3\ShopApp3.Entities\obj\Debug\netcoreapp2.1\ShopApp3.Entities.pdb

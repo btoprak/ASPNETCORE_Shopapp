@@ -1,0 +1,44 @@
+﻿@model LoginModel
+@{
+    ViewData["Title"] = "Login";
+}
+
+@section Scripts{
+    <script src="~/modules/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/modules/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js"></script>
+}
+
+
+<div class="account_grid">
+
+    @if (ViewBag.ErrorMessage != null)
+    {
+        <div class="text-danger">@ViewBag.ErrorMessage</div>
+    }
+    <div class="login-right">
+        <h3>REGISTERED CUSTOMERS</h3>
+        <p>If you have an account with us, please log in.</p>
+        <form asp-controller="Account" asp-action="Login" method="post">
+            <div asp-validation-summary="All" class="text-danger"></div>
+            <input type="hidden" name="ReturnUrl" value="@Model.ReturnUrl" />
+            <div>
+                <label asp-for="Email"></label>
+                <input asp-for="Email" value="@Model.Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div>
+                <label asp-for="Password"></label>
+                <input asp-for="Password" value="@Model.Password" class="form-control" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+            <a class="forgot" asp-controller="Account" asp-action="ForgotPassword">Forgot Your Password?</a>
+            <input type="submit" value="Login">
+        </form>
+    </div>
+    <div class=" login-left">
+        <h3>NEW CUSTOMERS</h3>
+        <p>By creating an account with our store, you will be able to move through the checkout process faster, store multiple shipping addresses, view and track your orders in your account and more.</p>
+        <a class="acount-btn" asp-controller="Account" asp-action="Register">Create an Account</a>
+    </div>
+    <div class="clearfix"> </div>
+</div>

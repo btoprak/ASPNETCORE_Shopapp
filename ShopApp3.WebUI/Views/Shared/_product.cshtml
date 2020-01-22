@@ -1,0 +1,35 @@
+﻿@model Product
+
+<div class="chain-grid" style="margin-top:5px; margin-right:10px; margin-left:12px">
+    <a asp-controller="Shop" asp-action="Details" asp-route-id="@Model.Id"><img class="img-responsive chain" src="~/img/@Model.ImageUrl" alt="@Model.Name" style="height:300px" /></a>
+    <span class="star"> </span>
+    <div class="grid-chain-bottom">
+        <h6><a asp-controller="Shop" asp-action="Details" asp-route-id="@Model.Id">@Model.Name</a></h6>
+        <div class="star-price">
+            <div class="dolor-grid">
+                <span class="actual">@Model.Price$</span>
+                <span class="rating">
+                    <input type="radio" class="rating-input" id="rating-input-1-5" name="rating-input-1">
+                    <label for="rating-input-1-5" class="rating-star1"> </label>
+                    <input type="radio" class="rating-input" id="rating-input-1-4" name="rating-input-1">
+                    <label for="rating-input-1-4" class="rating-star1"> </label>
+                    <input type="radio" class="rating-input" id="rating-input-1-3" name="rating-input-1">
+                    <label for="rating-input-1-3" class="rating-star"> </label>
+                    <input type="radio" class="rating-input" id="rating-input-1-2" name="rating-input-1">
+                    <label for="rating-input-1-2" class="rating-star"> </label>
+                    <input type="radio" class="rating-input" id="rating-input-1-1" name="rating-input-1">
+                    <label for="rating-input-1-1" class="rating-star"> </label>
+                </span>
+            </div>
+
+                @if(User.Identity.IsAuthenticated){
+                <form asp-controller="Cart" asp-action="AddToCart" method="post" style="text-align:center">
+                    <input type="hidden" name="productId" value="@Model.Id" />
+                    <input type="hidden" name="quantity" value="1" />
+                    <button type="submit" class="btn btn-primary">Add To Cart</button>
+                </form>
+                }
+            <div class="clearfix"> </div>
+        </div>
+    </div>
+</div>

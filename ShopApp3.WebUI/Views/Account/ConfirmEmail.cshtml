@@ -1,0 +1,13 @@
+﻿
+@{
+    ViewData["Title"] = "ConfirmEmail";
+}
+
+<h2>Confirm Email</h2>
+
+<div class="alert alert-warning">
+    @if (TempData["message"] != null)
+    {
+        @TempData["message"]
+    }
+</div>

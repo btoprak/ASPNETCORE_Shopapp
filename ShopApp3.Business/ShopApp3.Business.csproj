@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ShopApp3.DataAccess\ShopApp3.DataAccess.csproj" />
+    <ProjectReference Include="..\ShopApp3.Entities\ShopApp3.Entities.csproj" />
+  </ItemGroup>
+
+</Project>
